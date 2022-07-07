@@ -17,7 +17,7 @@ const startGame = () => {
   timerDisplay.innerHTML = timerCount
   scoreDisplay.innerHTML = score
   timerDisplay.style.fontSize = '96px'
-  timerDisplay.style.color = 'black'
+  timerDisplay.style.color = '#1E1011'
   timerDisplay.classList.remove('winnerTest')
   countDown()
 }

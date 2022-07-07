@@ -5,11 +5,11 @@ body {
     overflow: hidden;
     min-height: 100%;
     font-family: 'Henny Penny', cursive;
+    color: #1E1011;
     
 }
 
 h1 {
-    color: #1E1011;
     text-align:center;
     font-size: 48px
 }
@@ -56,38 +56,15 @@ button {
 .moles {
     position: absolute;
     animation-name: move; 
-    animation-duration: .1s;
+    animation-duration: .15s;
     animation-timing-function: ease-in-out;
-    background-image: url('test.png');
+    background-image: url('mole.png');
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: top;
-    height: 150px;
+    height: 75px;
     width: 125px;
     display: none;
-}
-
-@keyframes move {
-    0% {transform: translateY(60px);}
-    25% {transform: translateY(45px);}
-    50% {transform: translateY(30px);}
-    75% {transform: translateY(15px);}
-    100%{transform: translateY(0);}
-}
-
-@keyframes pulse {
-    100% {
-        transform: scale(1.8);
-    }
-}
-
-@keyframes winner {
-    50% {
-        transform: rotate3d(1, 2.0, 3.0, 360deg);   
-    }
-    100% {
-        transform: scale(2);
-    }
 }
 
 #score-box {
@@ -127,6 +104,30 @@ button {
     animation-duration: 1s;
 
 }
+
+@keyframes move {
+    0% {transform: translateY(60px);}
+    25% {transform: translateY(45px);}
+    50% {transform: translateY(30px);}
+    75% {transform: translateY(15px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(1.8);
+    }
+}
+
+@keyframes winner {
+    50% {
+        transform: rotate3d(1, 2.0, 3.0, 360deg);   
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
 
 
 
