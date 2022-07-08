@@ -10,6 +10,7 @@ timerDisplay.innerHTML = timerCount
 scoreDisplay.innerHTML = score
 
 //functions
+
 // starts game after button is clicked
 const startGame = () => {
   score = 0
@@ -58,7 +59,7 @@ const moleReset = (num) => {
   }, 1000)
 }
 
-//when timer reaches 0, test responses dtermined by score
+//when timer reaches 0, text responses determined by score
 const gameOver = () => {
   timerDisplay.style.fontSize = '60px'
   timerDisplay.style.color = '#2017CB'

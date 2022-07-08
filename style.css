@@ -5,8 +5,7 @@ body {
     overflow: hidden;
     min-height: 100%;
     font-family: 'Henny Penny', cursive;
-    color: #1E1011;
-    
+    color: #1E1011; 
 }
 
 h1 {
@@ -27,9 +26,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-
 }
+
 .board {  
     display: grid;
     justify-content: center;
@@ -103,7 +101,6 @@ button {
 .winnerTest {
     animation-name: winner;
     animation-duration: 1s;
-
 }
 
 @keyframes move {
