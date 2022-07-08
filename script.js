@@ -10,7 +10,7 @@ timerDisplay.innerHTML = timerCount
 scoreDisplay.innerHTML = score
 
 //functions
-// starts game after button is clicke
+// starts game after button is clicked
 const startGame = () => {
   score = 0
   timerCount = 10
@@ -41,14 +41,12 @@ const countDown = () => {
 
 //selects the random mole to peep
 const moleSelection = () => {
-  const moleLocal = Math.floor(Math.random() * 9)
+  const moleLocal = Math.floor(Math.random() * moles.length)
   moles[moleLocal].style.display = 'block'
   moles[moleLocal].addEventListener('click', () => {
     score++
     scoreDisplay.innerHTML = score
   })
-  console.log(moleLocal)
-  console.log(score)
   moleReset(moleLocal)
 }
 
